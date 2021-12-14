@@ -1,0 +1,8 @@
+#!/bin/bash 
+
+port=$1
+
+/home/jovyan/.nvm/versions/node/v12.22.7/bin/static \
+    -a 0.0.0.0  \
+    -p ${port}  \
+    /var/www/public/

@@ -1,0 +1,22 @@
+dependencies:
+  - python
+  - ipywidgets
+  - jupyterlab
+  - jupyterhub-singleuser
+  - nbconvert
+  - notebook
+  - nteract_on_jupyter
+  - widgetsnbextension 
+  - ipyleaflet
+  - nodejs==12.13.0
+  - voila
+  - nb_conda
+  - conda-build
+  - cwl-wrapper 
+  - cwltool
+  - jupyter-server-proxy
+  - cookiecutter
+  - mamba
+  - black
+  - nose2
+  - pylint
