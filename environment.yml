@@ -2,7 +2,8 @@ dependencies:
   - python
   - ipywidgets
   - jupyterlab
-  - jupyterhub-singleuser
+  - jupyterhub==1.4.1
+  - jupyterhub-singleuser==1.4.1
   - nbconvert
   - notebook
   - nteract_on_jupyter

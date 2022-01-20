@@ -72,7 +72,7 @@ RUN ${CONDA_DIR}/bin/conda init bash && \
 WORKDIR ${HOME}
 
 RUN curl -s -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash             && \
-    source ${HOME}/.bashrc && nvm install 12 && npm install -g yarn                                 && \
+    source ${HOME}/.bashrc && nvm install 12.22.7 && npm install -g yarn                                 && \
     source ${HOME}/.bashrc
 
 ADD package.json /opt/theia/package.json
@@ -153,7 +153,6 @@ ADD jupyter_notebook_config.py /etc/jupyter/jupyter_notebook_config.py
 ADD serve-docs /usr/bin/serve-docs 
 
 RUN chmod +x  /usr/bin/serve-docs 
-
 
 USER ${NB_USER}
 
