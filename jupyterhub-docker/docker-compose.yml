@@ -1,0 +1,18 @@
+---
+services:
+  jupyterhub:
+    image: jupyterhub
+    build: ./build
+    container_name: jupyterhub
+    networks:
+      - jupyterhub
+    ports:
+      - 8000:8000
+    volumes:
+      - ./jupyterhub_config.py:/srv/jupyterhub/jupyterhub_config.py
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+
+networks:
+  jupyterhub:
+    name: jupyterhub
